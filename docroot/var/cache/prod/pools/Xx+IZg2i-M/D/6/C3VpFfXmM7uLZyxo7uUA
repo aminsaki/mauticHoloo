@@ -1,0 +1,93 @@
+<?php //Mautic.LeadBundle.Entity.LeadList
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        clone ($p['Mautic\\LeadBundle\\Form\\Validator\\Constraints\\UniqueUserAlias'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Mautic\\LeadBundle\\Form\\Validator\\Constraints\\UniqueUserAlias')),
+        clone ($p['Mautic\\LeadBundle\\Form\\Validator\\Constraints\\SegmentInUse'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Mautic\\LeadBundle\\Form\\Validator\\Constraints\\SegmentInUse')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Mautic\\LeadBundle\\Entity\\LeadList',
+                'name',
+            ],
+            'defaultGroup' => [
+                'LeadList',
+            ],
+            'members' => [
+                [
+                    'name' => [
+                        $o[1],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'name' => $o[1],
+                ],
+            ],
+            'constraints' => [
+                [
+                    $o[3],
+                    $o[4],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[3],
+                        $o[4],
+                    ],
+                    'LeadList' => [
+                        $o[3],
+                        $o[4],
+                    ],
+                ],
+                [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'LeadList' => [
+                        $o[2],
+                    ],
+                ],
+            ],
+            'class' => [
+                1 => 'Mautic\\LeadBundle\\Entity\\LeadList',
+            ],
+            'property' => [
+                1 => 'name',
+            ],
+            'message' => [
+                2 => 'mautic.core.name.required',
+                'mautic.lead.list.alias.unique',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'LeadList',
+                ],
+                [
+                    'Default',
+                    'LeadList',
+                ],
+                [
+                    'Default',
+                    'LeadList',
+                ],
+            ],
+            'field' => [
+                3 => 'alias',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

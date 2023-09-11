@@ -1,0 +1,1 @@
+[2023-09-05 21:12:26] mautic.NOTICE: PHP Notice - SessionHandler::gc(): ps_files_cleanup_dir: opendir(/var/lib/php/sessions) failed: Permission denied (13) - in file /var/www/html/some-dir/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php - at line 116 [] {"hostname":"automation.holooland.com","pid":65764}

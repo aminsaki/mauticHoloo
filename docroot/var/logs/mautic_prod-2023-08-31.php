@@ -1,0 +1,1 @@
+[2023-08-31 20:12:59] mautic.NOTICE: PHP Notice - SessionHandler::gc(): ps_files_cleanup_dir: opendir(/var/lib/php/sessions) failed: Permission denied (13) - in file /var/www/html/some-dir/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php - at line 116 [] {"hostname":"xaas-vps-43","pid":61021}

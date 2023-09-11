@@ -1,0 +1,90 @@
+<?php //Mautic.CategoryBundle.Entity.Category
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Mautic\\CategoryBundle\\Entity\\Category',
+                'title',
+                3 => 'bundle',
+            ],
+            'defaultGroup' => [
+                'Category',
+            ],
+            'members' => [
+                [
+                    'title' => [
+                        $o[1],
+                    ],
+                    'bundle' => [
+                        $o[3],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'title' => $o[1],
+                    'bundle' => $o[3],
+                ],
+            ],
+            'class' => [
+                1 => 'Mautic\\CategoryBundle\\Entity\\Category',
+                3 => 'Mautic\\CategoryBundle\\Entity\\Category',
+            ],
+            'property' => [
+                1 => 'title',
+                3 => 'bundle',
+            ],
+            'constraints' => [
+                1 => [
+                    $o[2],
+                ],
+                3 => [
+                    $o[4],
+                ],
+            ],
+            'constraintsByGroup' => [
+                1 => [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'Category' => [
+                        $o[2],
+                    ],
+                ],
+                3 => [
+                    'Default' => [
+                        $o[4],
+                    ],
+                    'Category' => [
+                        $o[4],
+                    ],
+                ],
+            ],
+            'message' => [
+                2 => 'mautic.core.title.required',
+                4 => 'mautic.core.value.required',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'Category',
+                ],
+                4 => [
+                    'Default',
+                    'Category',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

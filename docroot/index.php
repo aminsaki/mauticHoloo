@@ -11,10 +11,11 @@
 define('MAUTIC_ROOT_DIR', __DIR__);
 
 // Fix for hosts that do not have date.timezone set, it will be reset based on users settings
-date_default_timezone_set('UTC');
+date_default_timezone_set('Asia/Tehran');
 
 require_once 'autoload.php';
-
+echo  date("Y-m-d H:i:s");
+exit();
 use Mautic\CoreBundle\ErrorHandler\ErrorHandler;
 use Mautic\Middleware\MiddlewareBuilder;
 use function Stack\run;

@@ -1,0 +1,65 @@
+<?php //Mautic.CampaignBundle.Entity.Campaign
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Mautic\\CampaignBundle\\Entity\\Campaign',
+                'name',
+            ],
+            'defaultGroup' => [
+                'Campaign',
+            ],
+            'members' => [
+                [
+                    'name' => [
+                        $o[1],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'name' => $o[1],
+                ],
+            ],
+            'class' => [
+                1 => 'Mautic\\CampaignBundle\\Entity\\Campaign',
+            ],
+            'property' => [
+                1 => 'name',
+            ],
+            'constraints' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'constraintsByGroup' => [
+                1 => [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'Campaign' => [
+                        $o[2],
+                    ],
+                ],
+            ],
+            'message' => [
+                2 => 'mautic.core.name.required',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'Campaign',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

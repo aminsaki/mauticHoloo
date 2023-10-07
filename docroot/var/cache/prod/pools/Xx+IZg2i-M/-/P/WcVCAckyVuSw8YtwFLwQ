@@ -1,0 +1,90 @@
+<?php //Mautic.ApiBundle.Entity.oAuth2.Client
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        $f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'](),
+        clone $p['Symfony\\Component\\Validator\\Constraints\\NotBlank'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Mautic\\ApiBundle\\Entity\\oAuth2\\Client',
+                'name',
+                3 => 'redirectUris',
+            ],
+            'defaultGroup' => [
+                'Client',
+            ],
+            'members' => [
+                [
+                    'name' => [
+                        $o[1],
+                    ],
+                    'redirectUris' => [
+                        $o[3],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'name' => $o[1],
+                    'redirectUris' => $o[3],
+                ],
+            ],
+            'class' => [
+                1 => 'Mautic\\ApiBundle\\Entity\\oAuth2\\Client',
+                3 => 'Mautic\\ApiBundle\\Entity\\oAuth2\\Client',
+            ],
+            'property' => [
+                1 => 'name',
+                3 => 'redirectUris',
+            ],
+            'constraints' => [
+                1 => [
+                    $o[2],
+                ],
+                3 => [
+                    $o[4],
+                ],
+            ],
+            'constraintsByGroup' => [
+                1 => [
+                    'Default' => [
+                        $o[2],
+                    ],
+                    'Client' => [
+                        $o[2],
+                    ],
+                ],
+                3 => [
+                    'Default' => [
+                        $o[4],
+                    ],
+                    'Client' => [
+                        $o[4],
+                    ],
+                ],
+            ],
+            'message' => [
+                2 => 'mautic.core.name.required',
+                4 => 'mautic.api.client.redirecturis.notblank',
+            ],
+            'groups' => [
+                2 => [
+                    'Default',
+                    'Client',
+                ],
+                4 => [
+                    'Default',
+                    'Client',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -63,13 +63,11 @@ class TwilioTransport implements TransportInterface
         if (null === $number) {
             return false;
         }
-        $url = $this->base_url . '/' . $this->token . '/sms/send.json?receptor=' . $number . '&sender=' . $this->sender . '&message=' . $content;
-
-
         try {
             $curl = curl_init();
+
             curl_setopt_array($curl, array(
-                CURLOPT_URL => $url,
+                CURLOPT_URL => "{$this->base_url}/{$this->token}/sms/send.json?receptor={$number}&sender={$this->sender}&message=".urlencode($content),
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING => '',
                 CURLOPT_MAXREDIRS => 10,
@@ -78,9 +76,10 @@ class TwilioTransport implements TransportInterface
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                 CURLOPT_CUSTOMREQUEST => 'GET',
                 CURLOPT_HTTPHEADER => array(
-                    'Cookie: cookiesession1=678A8C314567801234ABCEGIKMOQ294F'
+                    'Cookie: cookiesession1=678A8C31EGKLMNOPQRTUV0123456C6E2'
                 ),
             ));
+
             $response = curl_exec($curl);
             curl_close($curl);
             $this->logger->addWarning(
